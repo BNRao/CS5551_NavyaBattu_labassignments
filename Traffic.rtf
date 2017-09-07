@@ -1,0 +1,129 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;\f1\fmodern\fcharset0 CourierNewPS-BoldMT;\f2\fmodern\fcharset0 CourierNewPS-ItalicMT;
+}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red235\green235\blue235;\red0\green0\blue109;
+\red0\green0\blue255;\red15\green112\blue1;\red109\green109\blue109;\red55\green113\blue112;\red82\green0\blue103;
+\red103\green104\blue52;\red16\green60\blue192;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<
+\f1\b \cf4 html
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2 \cb3 <
+\f1\b \cf4 head
+\f0\b0 \cf2 >\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2     \cb3 <
+\f1\b \cf4 meta \cf5 name=\cf6 "viewport" \cf5 content=\cf6 "initial-scale=1.0, user-scalable=no"
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2     \cb3 <
+\f1\b \cf4 meta \cf5 charset=\cf6 "utf-8"
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2     \cb3 <
+\f1\b \cf4 title
+\f0\b0 \cf2 >\cb1 Traffic layer\cb3 </
+\f1\b \cf4 title
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2     \cb3 <
+\f1\b \cf4 style
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2         
+\f2\i \cf7 /* Always set the map height explicitly to define the size of the div\
+         * element that contains the map. */\
+        
+\f1\i0\b \cf4 #map 
+\f0\b0 \cf2 \{\cf0 \
+\cf2             
+\f1\b \cf5 height
+\f0\b0 \cf2 : \cf5 100\cf2 %;\cf0 \
+\cf2         \}\cf0 \
+\cf2         
+\f2\i \cf7 /* Optional: Makes the sample page fill the window. */\
+        
+\f1\i0\b \cf4 html
+\f0\b0 \cf2 , 
+\f1\b \cf4 body 
+\f0\b0 \cf2 \{\cf0 \
+\cf2             
+\f1\b \cf5 height
+\f0\b0 \cf2 : \cf5 100\cf2 %;\cf0 \
+\cf2             
+\f1\b \cf5 margin
+\f0\b0 \cf2 : \cf5 0\cf2 ;\cf0 \
+\cf2             
+\f1\b \cf5 padding
+\f0\b0 \cf2 : \cf5 0\cf2 ;\cf0 \
+\cf2         \}\cf0 \
+\cf2     \cb3 </
+\f1\b \cf4 style
+\f0\b0 \cf2 >\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 </
+\f1\b \cf4 head
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2 \cb3 <
+\f1\b \cf4 body
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2 \cb3 <
+\f1\b \cf4 div \cf5 id=\cf6 "map"
+\f0\b0 \cf2 ></
+\f1\b \cf4 div
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2 \cb3 <
+\f1\b \cf4 script
+\f0\b0 \cf2 >\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2     
+\f1\b \cf4 function 
+\f2\i\b0 \cf2 initMap
+\f0\i0 () \{\cf0 \
+\cf2         
+\f1\b \cf4 var 
+\f0\b0 \cf8 map \cf2 = 
+\f1\b \cf4 new 
+\f0\b0 \cf2 google.maps.Map(
+\f1\b \cf9 document
+\f0\b0 \cf2 .\cf10 getElementById\cf2 (
+\f1\b \cf6 'map'
+\f0\b0 \cf2 ), \{\cf0 \
+\cf2             
+\f1\b \cf9 zoom
+\f0\b0 \cf2 : \cf5 13\cf2 ,\cf0 \
+\cf2             
+\f1\b \cf9 center
+\f0\b0 \cf2 : \{
+\f1\b \cf9 lat
+\f0\b0 \cf2 : \cf5 34.04924594193164\cf2 , 
+\f1\b \cf9 lng
+\f0\b0 \cf2 : -\cf5 118.24104309082031\cf2 \}\cf0 \
+\cf2         \});\cf0 \
+\
+\cf2         
+\f1\b \cf4 var 
+\f0\b0 \cf8 trafficLayer \cf2 = 
+\f1\b \cf4 new 
+\f0\b0 \cf2 google.maps.TrafficLayer();\cf0 \
+\cf2         \cf8 trafficLayer\cf2 .setMap(\cf8 map\cf2 );\cf0 \
+\cf2     \}\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 </
+\f1\b \cf4 script
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2 \cb3 <
+\f1\b \cf4 script \cf5 async defer\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3         src=\cf6 "{\field{\*\fldinst{HYPERLINK "https://maps.googleapis.com/maps/api/js?key=AIzaSyD06oeAYArIlkKGcRvs1t1jvXVydsKYDBU&callback=initMap"}}{\fldrslt \cf11 \ul \ulc11 https://maps.googleapis.com/maps/api/js?key=AIzaSyD06oeAYArIlkKGcRvs1t1jvXVydsKYDBU&callback=initMap}}"
+\f0\b0 \cf2 >\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 </
+\f1\b \cf4 script
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2 \cb3 </
+\f1\b \cf4 body
+\f0\b0 \cf2 >\cf0 \cb1 \
+\cf2 \cb3 </
+\f1\b \cf4 html
+\f0\b0 \cf2 >}
